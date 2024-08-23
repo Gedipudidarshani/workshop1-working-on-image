@@ -58,13 +58,13 @@ Save the final images with swapped regions and resized dimensions.
 
 The algorithm completes with two processed images ready for use.
 # CODING AND OUTPUT:
-NAME : GANJI MUNI MADHURI REG NO : 212223230060
+NAME : GEDIPUDI DARSHANI REG NO : 212223230062
 ```
 import cv2
 import numpy as np
 import random as rd
-image1 = cv2.imread("shiv.jpg")
-image2 = cv2.imread("loki.jpg")
+image1 = cv2.imread("tiger.jpg")
+image2 = cv2.imread("lokesh.jpg")
 image2 = cv2.resize(image2,(500,500))
 image1 = cv2.resize(image1,(image2.shape[1],image2.shape[0]))
 merged_image = np.hstack((image1,image2))
